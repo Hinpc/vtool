@@ -11,6 +11,7 @@ script:
 after_success:
   - git config --global user.name "Gallen.Hu"
   - git config --global user.email "gallenhu@foxmail.com"
+  - mv -f ./.gitignorepub ./.gitignore
   - git init
   - git add -A
   - git commit -m "Travis CI Auto Builder"
